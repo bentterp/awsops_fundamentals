@@ -6,7 +6,7 @@ module "vpc" {
   public_subnets     = [ "10.0.101.0/24", "10.0.102.0/24" ]
   create_nat_gateway = "true"
   create_vgw         = "true"
-  flowlogs_s3_bucket = "${var.environment}-flowlogs"
+  flowlogs_s3_bucket = "cloudfarm-${var.environment}-flowlogs"
   tags {
     "CostCenter"     = "${var.costcenter}"
     "Environment"    = "${var.environment}"
@@ -14,7 +14,7 @@ module "vpc" {
 }
 
 resource "aws_s3_bucket" "flowlogs" {
-  bucket         = "$cloudfarm-{var.environment}-flowlogs"
+  bucket         = "cloudfarm-${var.environment}-flowlogs"
   acl            = "private"
   force_destroy = true
   tags {

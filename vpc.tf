@@ -33,7 +33,7 @@ resource "aws_security_group_rule" "allow_http" {
   from_port       = 80
   to_port         = 80
   protocol        = "tcp"
-  cidr_blocks     = ["81.233.161.30/32"]
+  cidr_blocks     = ["85.166.234.146/32"]
   security_group_id = "${aws_security_group.cloudfarm.id}"
 }
 

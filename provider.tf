@@ -4,7 +4,7 @@ terraform {
 		role_arn     = "arn:aws:iam::552687213402:role/admin"
 		external_id  = "BF-AWSOpsLab"
 		bucket         = "bf-awslab-tfstate"
-		key            = "fundamentals/####.tfstate"
+		key            = "fundamentals/iifonovs.tfstate"
 		dynamodb_table = "TerraformLocks"
 		region         = "eu-west-1"
 	}

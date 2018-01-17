@@ -1,3 +1,3 @@
 region = "eu-central-1"
-costcenter = "%%%%"
-environment = "####"
+costcenter = "ocse"
+environment = "idersson"

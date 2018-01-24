@@ -1,3 +1,3 @@
 region = "eu-central-1"
-costcenter = "%%%%"
-environment = "####"
+costcenter = "SD8"
+environment = "kims"

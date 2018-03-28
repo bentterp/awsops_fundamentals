@@ -10,6 +10,7 @@ terraform {
 	}
 }
 provider "aws" {
+	version = "~> 1.12"
 	region  = "${var.region}"
 	assume_role {
 		role_arn     = "arn:aws:iam::552687213402:role/admin"
